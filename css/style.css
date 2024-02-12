@@ -1,0 +1,671 @@
+/* ESTILOS HEADER */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300&display=swap');
+
+*{
+    font-family: 'Josefin Slab', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* Estilos de cabecera */
+header{
+    width: 100%;
+    padding: 40px 0 0;
+    background: url("../img/bg-header1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+header nav {
+    width: 100%;
+    /* height: 400px;------- EJE Y DE NAV */
+    /* Centrar un contenido */
+    margin: 0 auto;
+    justify-content:space-between;
+    /* align-items: flex-start;---- EJE X DE NAV */
+    align-items: center;
+    color: #fff;
+}
+
+.logo-section{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+#hero1{
+    display: flex;
+    align-items: center; 
+    justify-content: space-evenly; 
+    padding: 0 70px;
+}
+
+#hero1 * {
+    margin: 20px; 
+}
+
+#hero1 button{
+    /* margin-top: -10px; */
+    background: #DD7023;
+    font-size:20px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: #fff;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#hero1 p{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+#hero1 a{
+    font-size: 20.5px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#hero1 input[type="text"]::placeholder {
+    color: #ccc; /* color del texto del placeholder */
+}
+
+#hero1 input.icono-placeholder {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #DD7023;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#hero1 input.icono-placeholder:focus {
+    outline: none;
+    box-shadow: 0 2px 8px rgba(221, 112, 35, 0.4);
+}
+
+#hero1 input[type="text"]:focus {
+    outline: none;
+    border-color: #DD7023; /* color del borde al estar enfocado */
+}
+
+header nav ul{
+    display: flex;
+    background: #DD7023;
+    padding: 17px;
+    margin: 0;
+}
+
+nav ul li{
+    list-style:decimal-leading-zero;
+    margin: 0 25px;
+    font-size: 20px;
+    color: #000000;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400px;
+    transition: .5s;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+#hero{
+    width: 80%;
+    text-align: center;
+     /* Centrar un contenido */
+    margin: 0 auto;
+    padding-top: 60px;
+}
+#hero h2{
+    font-size: 57px;
+    color: #DD7023;
+}
+#hero h1{
+    font-size: 28px;
+    color: #fff;
+    /* DE MINISCULA A MAYUSCULA */
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+#hero button{
+    background: #DD7023;
+    font-size:25px;
+    padding: 10px 18px;
+    border-radius: 15px;
+    color: #fff;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+}
+
+nav li a:hover{
+    background-color: #ccc;
+    color: #000;
+    /* border-bottom:2px solid #ccc ;
+    border-top: 2px solid #fff; */
+}
+
+#logo img{
+    transition: .5s;
+    margin-right: auto;
+}
+
+#logo img:hover{
+    transform: scale(1.1);
+}
+
+#hero button:hover{
+    transform: scale(0.9);
+    background-color: #ccc;
+    color: #000;
+}
+
+#hero1 button:hover{
+    transform: scale(0.9);
+    background-color: #ccc;
+    color: #000;
+}
+/* ESTILOS SERVICIOS */
+
+main{
+    width: 100%;
+    position: relative; 
+}
+
+
+#servicios{
+    width: 100%;
+    background: #ffffff;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#servicios a{
+    position: relative;
+    font-size: 30px;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+#servicios a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#servicios h2{
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#servicios p {
+    font-size: 24px;
+}
+
+#servicios .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+
+#servicios .col-servicios{
+    position: relative;
+}
+
+#servicios .col-servicios h3{
+    font-size: 25px;
+    position: relative;
+    text-align: center;
+    color: #000;
+    padding-bottom: 11px;
+} 
+
+#servicios .col-servicios img {
+    transition: .5s;
+    cursor: pointer;
+}
+#servicios .col-servicios img:hover{
+    border-radius: 50%;
+}
+
+/* ESTILOS PETSHOP */
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+#petshop a{
+    position: relative;
+    font-size: 30px;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+#petshop a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#petshop{
+    width: 100%;
+    background: url(../img/bg-petshop2.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#petshop h2{
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+#petshop p{
+    font-size: 30px;
+    margin-bottom: 2px;
+    color: #fff;
+}
+
+#petshop .fila{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 80px;
+}
+
+#petshop .col-shop{
+    position: relative;
+}
+
+#petshop .col-shop h3{
+    font-size: 30px;
+    padding-top: 10px ;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #fff;
+}
+
+#petshop .col-shop img{
+    transition: .5s;
+    cursor: pointer;
+}
+
+#petshop .col-shop img:hover{
+    filter: blur(3px);
+}
+
+/* ESTILOS NUESTROS CLIENTES */
+
+#nuestrosC{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#nuestrosC a{
+    position: relative;
+    font-size: 30px;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+#nuestrosC a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#nuestrosC h2{
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+#nuestrosC p{
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+#nuestrosC .fila{
+    width: 80%;
+    align-items: center;
+    padding: 40px;
+    background-color: #DD7023;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9); 
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 80px;
+}
+
+#nuestrosC .col-nuestrosC h3{
+    font-size: 30px;
+    padding-top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #000;
+}
+
+#nuestrosC .col-nuestrosC img{
+    transition: .5s;
+    cursor: pointer;
+    padding-top: 45px;
+}
+
+#nuestrosC .col-nuestrosC img:hover{
+    transform: scale(1.6);
+}
+
+/* ESTILOS PROGRAMACIÓN DE CITA */
+
+#citas{
+    width: 100%;
+    position: relative;
+    background: url(../img/bg-prCitas.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#citas a{
+    position: relative;
+    font-size: 30px;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+#citas a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#citas h2{
+    font-size: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+#citas p{
+    font-size: 30px;
+    margin-top: 35px;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+#citas form{
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+#citas .fila{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#citas input,
+#citas select{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 10px 0;
+}
+
+
+#citas button{
+    background: #000;
+    color: #fff;
+    font-size: 26px;
+    padding: 6px 40px;
+    border-radius: 4px;
+    margin-top: 40px;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#citas button:hover{
+    transform: scale(0.9);
+    background: #ccc;
+    color: #000;
+}
+
+/* ESTILOS PROMOCIONES */
+
+#promociones {
+    text-align: center;
+    padding: 50px 0;
+}
+
+#promociones a{
+    position: relative;
+    font-size: 30px;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+#promociones a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#promociones h2 {
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.promocion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.promocion img {
+    width: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.promocion .descripcion {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.promocion h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.promocion p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.promocion .boton {
+    background-color: #DD7023;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.promocion .boton:hover {
+    transform: scale(0.9);
+    background: #ccc;
+    color: #000;
+}
+
+
+/* ESTILOS CONTACTO */
+
+#contacto{
+    width: 100%;
+    position: relative;
+    background: #DD7023;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+
+#contacto a{
+    position: relative;
+    font-size: 30px;
+    color: #000;
+    border-radius: 5px;
+    text-decoration: none; 
+}
+
+#contacto a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+#contacto h2{
+    margin-top: 25px;
+    font-size: 50px;
+}
+
+#contacto p{
+    font-size: 25px;
+    padding: 10px 0 10px;
+}
+
+#contacto form{
+    width: 80%;
+    max-width: 650px;
+    margin: 0 auto;
+}
+#contacto .fila{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#contacto input,
+#contacto select{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 10px 0;
+}
+
+#contacto button{
+    background: #000;
+    color: #fff;
+    font-size: 26px;
+    padding: 6px 40px;
+    border-radius: 4px;
+    margin-top: 40px;
+    border-color: transparent;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#contacto button:hover{
+    transform: scale(0.9);
+    background: #fff;
+    color: #000;
+}
+
+
+
+/* ESTILOS FOOTER */
+
+footer{
+    background: #000;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 80px;
+    padding-bottom: 120px;
+}
+
+footer p{
+    padding-bottom: 10px;
+}
+
+/* TABLETS O IPAD */
+
+@media screen and (min-width: 768px) and (max-width: 990px){
+    header nav{
+        display: block;
+
+    }
+   
+}
+
+/* PHONES */
+@media screen and (max-width: 767px) {
+
+    #logo img {
+        width: 80px; /* Ajusta el tamaño según tu preferencia */
+    }
+
+    /* Ajusta el tamaño de la fuente de los elementos de navegación */
+    nav ul li {
+        font-size: 16px; /* Ajusta el tamaño según tu preferencia */
+    }
+
+    /* Ajusta el tamaño del botón de inicio de sesión */
+    #hero1 button {
+        font-size: 16px; /* Ajusta el tamaño según tu preferencia */
+        padding: 6px 12px; /* Ajusta el padding según tu preferencia */
+    }
+
+    /* Otros ajustes de diseño específicos para dispositivos móviles */
+
+    /* Por ejemplo, puedes hacer que los elementos de tu página se apilen uno encima del otro en lugar de estar en línea */
+    header nav {
+        flex-direction: column;
+    }
+
+    /* También puedes ajustar el tamaño de otros elementos y hacer que ocupen el ancho completo de la pantalla, dependiendo de tus necesidades específicas */
+}
